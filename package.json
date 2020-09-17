@@ -1,12 +1,15 @@
 {
   "name": "touch-helper",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://eyekorea@github.com/eyekorea/touch-helper.git",
   "author": "eyekorea <eyekorea0@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "parcel serve ./src/index.html --port 1111 -d test",
-    "build": "tsc"
+    "build": "parcel build ./src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.2"
   }
 }
